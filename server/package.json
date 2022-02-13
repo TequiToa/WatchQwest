@@ -1,0 +1,12 @@
+{
+  "name": "watchqwest",
+  "version": "1.0.0",
+  "description": "It's an anime website for tracking and scoring facilities",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Diego Devesa",
+  "license": "ISC"
+}
