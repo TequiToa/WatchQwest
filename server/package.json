@@ -1,7 +1,7 @@
 {
   "name": "watchqwest",
   "version": "1.0.0",
-  "description": "It's an anime website for tracking and scoring facilities",
+  "description": "It's an anime website for tracking and scoring",
   "main": "index.js",
   "type": "module",
   "scripts": {
