@@ -1,0 +1,35 @@
+@import './base.sass'
+
+$grey: darkgray
+$black: black
+
+@mixin btn($color,$color2,$size)
+    border:2px solid $color
+    border-radius: 0.2rem
+    color:$color2
+    padding: 5px
+    background-color: $color
+    font-size: 18px 
+    font-family: $globalFont
+    max-width: 120px
+    cursor: pointer
+    display: flex
+    flex-direction: row  
+    justify-content: center 
+    
+    &:hover
+        background-color: lighten($color,20%)
+        border:2px solid lighten($color,20%)
+
+        transition: all 1s ease-in-out
+            
+.btnPrimary
+    @include btn($primary,$background,120px)
+.btnPrimarySmall
+    @include btn($primary,$background,40px)
+.btnPrimaryDisabled
+    @include btn(transparent,$secondary,120px)
+    text-decoration: underline
+
+.btnSecondary
+    @include btn($primary,$secondary,120px)

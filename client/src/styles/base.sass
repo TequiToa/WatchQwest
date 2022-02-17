@@ -1,0 +1,59 @@
+$globalFont: Rubik
+
+$primary:#facf20
+$secondary: whitesmoke
+$foreground: #1c1c1c
+$background: #0e0e0e
+
+body
+    box-sizing: border-box
+    font-family: $globalFont
+    color:$secondary
+    font-size: 62.5%
+    background-color: $background
+    margin: 0
+    padding: 0
+a
+    text-decoration: none
+    color:$secondary
+
+.heroTitle
+    color: $primary
+    font-weight: bold
+
+.bold
+    font-weight: bold
+    color: $primary
+
+.flexRow
+    display:flex
+    flex-direction: row
+
+
+.flexColRight
+    display:flex
+    flex-direction: column
+    width: 100%
+.flexColLeft
+    display:flex
+    flex-direction: column
+    width: 100%
+    max-width:800px
+.dashboardContainer
+    display: flex
+    flex-flow: row nowrap
+
+@mixin flexCol
+        display: flex
+        flex-direction: column
+        width:50%
+.HomeLeft
+    @include flexCol
+
+.HomeRight
+    @include flexCol
+
+.addAnimeContainer
+    display:flex
+    flex-direction: column
+    width: 100%
